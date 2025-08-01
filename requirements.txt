@@ -1,0 +1,2 @@
+langflow==1.0.20
+gunicorn==23.0.0
