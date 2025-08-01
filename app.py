@@ -1,5 +1,6 @@
-from langflow import run
-import os
+from langflow.main import create_app
+
+app = create_app()
 
 if __name__ == "__main__":
-    run(host="0.0.0.0", port=int(os.environ.get("PORT", 7860)))
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 7860)))
